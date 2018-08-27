@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SecondPage } from '../second/second';
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the SettingsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { SecondPage } from '../second/second';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-settings',
+  templateUrl: 'settings.html',
 })
-export class HomePage {
+export class SettingsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-  }
-
-  onButtonClicked(){
-    this.navCtrl.push(SecondPage, {nama: 'Kelvin Tryanto', umur: '25 tahun'});
+    console.log('ionViewDidLoad SettingsPage');
   }
 
 }
